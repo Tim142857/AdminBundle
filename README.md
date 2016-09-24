@@ -36,7 +36,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```bash
-$ composer require Tleroch/adminBundle
+$ composer require Tleroch/adminBundle "dev-master"
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -61,7 +61,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new SEL\AdminBundle\SELAdminBundle(),
+            new Tleroch\AdminBundle\TlerochAdminBundle(),
         );
 
         // ...
@@ -73,8 +73,8 @@ class AppKernel extends Kernel
 
 Finaly add customer api key in `app/config/config.yml`
 ```
-# Sel Admin
-sel_admin:
+# Tleroch Admin
+tlr_admin:
     security_seed: 
     customer_email: 
     redirect_route: 
