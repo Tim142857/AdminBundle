@@ -169,7 +169,7 @@ class Menu {
     }
 
     /**
-     * @param \SEL\AdminBundle\Model\Menu $parent
+     * @param \Tleroch\AdminBundle\Model\Menu $parent
      *
      * @return $this
      */
@@ -180,7 +180,7 @@ class Menu {
     }
 
     /**
-     * @return \SEL\AdminBundle\Model\Menu
+     * @return \Tleroch\AdminBundle\Model\Menu
      */
     public function getParent() {
         return $this->parent;

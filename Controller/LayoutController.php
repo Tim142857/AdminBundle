@@ -21,9 +21,9 @@ class LayoutController extends Controller {
 
         $menus = $this->getDispatcher()->dispatch(AdminEvents::THEME_SIDEBAR_MENU, new SidebarMenuEvent($request));
 
-        return $this->render('SELAdminBundle:Default:menu.html.twig', array(
+        return $this->render('TlerochAdminBundle:Default:menu.html.twig', array(
                     'menus' => $menus->getItems(),
-                    'home_link' => $this->getParameter('sel_admin.redirect_route')
+                    'home_link' => $this->getParameter('tleroch_admin.redirect_route')
         ));
     }
 
@@ -49,10 +49,10 @@ class LayoutController extends Controller {
 //            return new Response();
 //        }
 
-        return $this->render('SELAdminBundle:Default:breadcrumb.html.twig', array(
+        return $this->render('TlerochAdminBundle:Default:breadcrumb.html.twig', array(
                     'breadcrumbs' => $list,
                     'title' => $title,
-                    'home_link' => $this->getParameter('sel_admin.redirect_route')
+                    'home_link' => $this->getParameter('tleroch_admin.redirect_route')
         ));
     }
 

@@ -25,7 +25,7 @@ class TlerochAdminExtension extends Extension {
         $container->setParameter('tleroch_admin.customer_email', $config['customer_email']);
         $container->setParameter('tleroch_admin.redirect_route', $config['redirect_route']);
 
-        $container->setParameter('tleroch_admin.session_name', 'sel-token');
+        $container->setParameter('tleroch_admin.session_name', 'tleroch-token');
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
