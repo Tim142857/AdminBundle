@@ -82,7 +82,17 @@ tleroch_admin:
     redirect_route:  
 ```
 
-Step 4: Read documentation
+Step 4: Add Routing
+--------------------------
+
+```
+#app/config/routing.yml
+tleroch_admin:
+    resource: "@TlerochAdminBundle/Resources/config/routing.yml"
+    prefix: /admin  
+```
+
+Step 5: Read documentation
 --------------------------
 
 You can now read documentation:
@@ -91,3 +101,4 @@ You can now read documentation:
 * [Layout](Resources/doc/layout.md)
 * [Menu](Resources/doc/menu.md)
 * [Security](Resources/doc/security.md)
+
