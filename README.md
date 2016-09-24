@@ -19,7 +19,7 @@ Open composer.json and add this section:
 "repositories": [
         {
             "type": "vcs",
-            "url":  "http://git.siteenligne.fr/lgpg-medias/SELAdminBundle.git"
+            "url":  "https://github.com/Tim142857/AdminBundle.git"
         }
     ]
 ```
@@ -36,7 +36,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```bash
-$ composer require siteenligne/admin-bundle "^0.1"
+$ composer require Tleroch/adminBundle
 ```
 
 This command requires you to have Composer installed globally, as explained
