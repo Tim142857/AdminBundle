@@ -1,0 +1,25 @@
+{% import 'TlerochAdminBundle:Default:macros.html.twig' as macro %}
+
+<div id="navbar-left">
+    <div class="brand-icon">
+        <a href="{{ path(home_link) }}">
+            {% image '@TlerochAdminBundle/Resources/public/images/logo-sel.png' %}
+            <img src="{{ asset_url }}" class="img-responsive center-block" />
+            {% endimage %}
+        </a>
+    </div>
+    <ul>
+        {% for menu in menus %}
+            {{ macro.menu_item(menu) }}
+        {% endfor %}
+    </ul>
+    {#
+        <div class="links-more">
+            <a href="#">Voir votre site</a>
+            <a href="#">Statistiques</a>
+            <a href="#">Déconnexion</a>
+        </div>
+    
+        <a class="toggle-nav"><span class="glyphicon glyphicon-arrow-left"></span></a>
+    #}
+</div>

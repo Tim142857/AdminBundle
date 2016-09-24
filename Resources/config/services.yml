@@ -1,0 +1,8 @@
+services:
+    tlr_admin.security:
+        class: Tleroch\AdminBundle\Services\Security
+        arguments: ["@request_stack", "@service_container"]
+
+    tlr_admin.file_uploader:
+        class: Tleroch\AdminBundle\Services\FileUploader
+        arguments: ['@service_container']

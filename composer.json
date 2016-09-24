@@ -1,0 +1,16 @@
+{
+    "name": "Tleroch/adminBundle",
+    "type": "symfony-bundle",
+    "description": "This Bundle provides various tools to create customer administration",
+    "license": "MIT",
+    "keywords": [],
+    "require": {
+        "php": "^5.5.9|~7.0",
+        "symfony/framework-bundle": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TLR\\AdminBundle\\": ""
+        }
+    }
+}

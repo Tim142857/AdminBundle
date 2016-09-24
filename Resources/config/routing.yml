@@ -1,0 +1,5 @@
+tlr_admin_auth:
+    path: /auth/{token}
+    defaults: { _controller: TlerochAdminBundle:Security:auth }
+    requirements:
+        id: \W{42}
