@@ -3,3 +3,6 @@ tlr_admin_auth:
     defaults: { _controller: TlerochAdminBundle:Security:auth }
     requirements:
         id: \W{42}
+tlr_admin_logOut:
+    path: /logOut
+    defaults: { _controller: TlerochAdminBundle:Security:logOut }        

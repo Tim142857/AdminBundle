@@ -92,6 +92,29 @@ tleroch_admin:
     prefix: /admin  
 ```
 
+Step 4: Configure Less/Assetic
+--------------------------
+
+```
+#app/config/routing.yml
+
+# Assetic
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+        less:
+            node: 
+            #e.g: node: C:\Program Files\nodejs\node.exe
+            node_paths: 
+            #e.g: node: node_paths: [C:\Users\YourUser\AppData\Roaming\npm\node_modules]
+    bundles:
+        - TlerochAdminBundle
+        - AdminBundle
+        #-Your others bundles
+```
+
 Step 5: Read documentation
 --------------------------
 
@@ -101,4 +124,7 @@ You can now read documentation:
 * [Layout](Resources/doc/layout.md)
 * [Menu](Resources/doc/menu.md)
 * [Security](Resources/doc/security.md)
+
+
+
 

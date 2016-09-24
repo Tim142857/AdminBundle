@@ -23,4 +23,10 @@ class SecurityController extends Controller {
         return $this->redirect($request->getBaseUrl());
     }
 
+    public function logOutAction(Request $request) {
+        $session = $request->getSession();
+        $session->clear();
+        return $this->redirect($request->getBaseUrl());
+    }
+
 }

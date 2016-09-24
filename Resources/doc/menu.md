@@ -32,6 +32,7 @@ class MenuListener {
         $items = array(
             new Menu('menu-1', 'Section', ''),
             new Menu('sub-menu-1', 'Menu 1', 'route')
+            new Menu('menu-2', 'Déconnexion', 'tlr_admin_logOut', array(), 'glyphicon glyphicon-log-out')
         );
 
         return $items;
