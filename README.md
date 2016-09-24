@@ -26,7 +26,9 @@ Open composer.json and add this section:
 
 You also need to allow unsecure url, add in section config:
 ```
-"secure-http": false
+"config": {
+        "secure-http": false
+    },
 ```
 
 Step 2: Download the Bundle
@@ -74,10 +76,10 @@ class AppKernel extends Kernel
 Finaly add customer api key in `app/config/config.yml`
 ```
 # Tleroch Admin
-tlr_admin:
+tleroch_admin:
     security_seed: 
     customer_email: 
-    redirect_route: 
+    redirect_route:  
 ```
 
 Step 4: Read documentation
